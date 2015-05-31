@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnockoutTutorial", "KnockoutTutorial\KnockoutTutorial.csproj", "{36C61C95-20FE-46B4-BCEC-80B88C373266}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnockoutTutorial", "KnockoutTutorial\KnockoutTutorial.csproj", "{565749DF-217A-498D-BB09-CCB48992886C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{36C61C95-20FE-46B4-BCEC-80B88C373266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36C61C95-20FE-46B4-BCEC-80B88C373266}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36C61C95-20FE-46B4-BCEC-80B88C373266}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36C61C95-20FE-46B4-BCEC-80B88C373266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{565749DF-217A-498D-BB09-CCB48992886C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565749DF-217A-498D-BB09-CCB48992886C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565749DF-217A-498D-BB09-CCB48992886C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565749DF-217A-498D-BB09-CCB48992886C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

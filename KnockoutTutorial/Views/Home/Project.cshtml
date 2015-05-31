@@ -1,0 +1,29 @@
+﻿<!-- Project Page -->
+
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+<h3>@ViewBag.Detail</h3>
+<button class="btn" data-bind="click: addProject">Add</button>
+<div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th class="col-sm-2">Language</th>
+                <th class="col-sm-9">Name</th>
+                <th class="col-sm-1">Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <!-- Todo: Generate table body -->
+        <tbody data-bind="foreach: recent">
+            <tr>
+                <td><select class="form-control" data-bind="options: $root.programming, value: lang, optionsText: 'frameLang'"></select></td>
+                <td>    <input class="form-control" data-bind="value: name" />
+                <td data-bind="text: formattedPrice"></td>
+                <td><button class="btn" data-bind="click: $root.removeProject">-</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="~/Scripts/KOScripts/ProjectViewModel.js" type="text/javascript"></script>
+

@@ -53,3 +53,6 @@ C:\Users\Patrick\Documents\Github\KnockoutTutorial\KnockoutTutorial\bin\Microsof
 C:\Users\Patrick\Documents\Github\KnockoutTutorial\KnockoutTutorial\obj\Debug\KnockoutTutorial.csprojResolveAssemblyReference.cache
 C:\Users\Patrick\Documents\Github\KnockoutTutorial\KnockoutTutorial\obj\Debug\KnockoutTutorial.dll
 C:\Users\Patrick\Documents\Github\KnockoutTutorial\KnockoutTutorial\obj\Debug\KnockoutTutorial.pdb
+C:\Users\Patrick\Documents\Github\KnockoutTutorial\KnockoutTutorial\bin\DelegateDecompiler.dll
+C:\Users\Patrick\Documents\Github\KnockoutTutorial\KnockoutTutorial\bin\Mono.Reflection.dll
+C:\Users\Patrick\Documents\Github\KnockoutTutorial\KnockoutTutorial\bin\PerpetuumSoft.Knockout.dll

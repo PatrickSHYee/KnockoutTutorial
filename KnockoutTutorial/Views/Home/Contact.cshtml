@@ -1,17 +1,93 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
-<h2>@ViewBag.Title.</h2>
+﻿<!-- Contact Page -->
+<h2>@ViewBag.Title</h2>
+<p>@ViewBag.ContactSlogan</p>
 <h3>@ViewBag.Message</h3>
 
+<p>The following content is using the combination of bootstrap and Knockout.  The labels are control-label and col-sm-2 from bootstrap.
+    The inputs are Knockout data bind displaying the use of value event.</p>
+<form class="form-horizontal">
+    <div class="row">
+        <label class="col-sm-2 control-label">First Name:</label>
+        <div class="col-sm-4">
+            <input class="form-control" data-bind="value: firstName" />
+        </div>
+        <label class="col-sm-2 control-label">Last Name:</label>
+        <div class="col-sm-4">
+            <input class="form-control" data-bind="value: lastName" />
+        </div>
+        <label class="col-sm-2 control-label">Email: </label>
+        <div class="col-sm-4">
+            <input class="form-control" data-bind="value: email" />
+        </div>
+        <label class="col-sm-2 control-label">Phone:</label>
+        <div class="col-sm-4">
+            <input class="form-control" data-bind="value: num_Phone" />
+        </div>
+        <label class="col-sm-2 control-label">Subject:</label>
+        <div class="col-sm-10">
+            <input class="form-control" data-bind="value: subject" />
+        </div>
+        <label class="col-sm-2 control-label">Message:</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" data-bind="value: message" rows="6"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 btn-case text-center">
+            <button data-bind="click: capLastName">Cap Last</button>
+            <div class="text-left">
+                <p>The user's last name to uppercase and lowercase the first name.</p>
+            </div>
+        </div>
+        <div class="col-sm-4 btn-case text-center">
+            <button data-bind="click: capFirstName">Cap First</button>
+            <div class="text-left">
+                <p>The user's first name converts to uppercase and the last name to lowercase.</p>
+            </div>
+        </div>
+        <div class="col-sm-4 btn-case text-center">
+            <button data-bind="click: capFullName">Full Caps</button>
+            <div class="text-left">
+                <p>Changes the first and last names to uppercase.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <hr />
+        <pre>The following section is using Knockout using responsiveness of the data bind.  The bold text is the user input, see how the user input changes the text below.</pre>
+    </div>
+    <div>
+        <p>Subject: <strong data-bind="text: subject"></strong></p>
+        <p>Dear Mr. Patrick S. Yee,</p>
+        <p>Thanks for developing a great portfolio.  My name is <strong data-bind="text: firstName"></strong> <strong data-bind="text: lastName"></strong>
+        and I am reaching out.
+        </p>
+        <pre>** Note: The data bind for the first and last name are 2 different variables using 2 spans. **</pre>
+        <p><strong data-bind="text: message"></strong></p>
+        <p>From,</p>
+        <strong data-bind="text: fullName"></strong><br />
+        <pre>** Note: Patrick learned that full name variable is a function that a return parameter and the 2 variables are seperated with a space are like functions with parentlesses. **</pre>
+        <strong data-bind="text: num_Phone"></strong><br />
+        <strong data-bind="text: email"></strong>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Send</button>
+        </div>
+    </div>
+</form>
+<hr />
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
+    Patrick S. Yee<br />
+    Denver, CO 80247<br />
     <abbr title="Phone">P:</abbr>
     425.555.0100
 </address>
 
 <address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    <strong>Support:</strong>   <a href="patrickshyee@gmail.com">PatrickSHYee@gmail.com</a><br />
 </address>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/ko")
+<script src="~/Scripts/KOScripts/ContactViewModel.js" type="text/javascript"></script>
